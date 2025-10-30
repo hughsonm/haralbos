@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "haralbos"
+version = "1.0.0"
+authors = [
+    { name = "Max Hughson", email = "max.ak.hughson@gmail.com" },
+]
+description = "Probabilities"
+requires-python = ">=3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["haralbos*"]
+namespaces = false
+
+[project.urls]
+Homepage = "hughsonm.github.io"
