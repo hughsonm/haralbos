@@ -20,7 +20,7 @@ dependencies = []
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["haralbos*"]
+include = ["*.py"]
 namespaces = false
 
 [project.urls]
