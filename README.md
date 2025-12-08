@@ -32,4 +32,12 @@ print(f'If you win {100*my_win_chance_per_match:.1f} percent of your matches, th
 # => "If you win 55.0 percent of your matches, then you can expect to trophy 15.0 percent of your Premier Drafts"
 ```
 
+## Run The Tests
+
+This project uses the builtin `unittest` module. Use the following command to run all the tests:
+
+```bash
+python -m unittest
+```
+
 
