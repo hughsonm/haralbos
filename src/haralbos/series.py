@@ -20,9 +20,9 @@ def series_win_chance_home_away(win_chance_home, win_chance_away, wins_remaining
     game_index = len(home_schedule) + 1 - (losses_remaining+wins_remaining)
     win_chance = win_chance_home if home_schedule[game_index] else win_chance_away
     series_chance_if_win = series_win_chance_home_away(
-        win_chance_home, win_chance_away, wins_remaining-1, losses_remaining)
+        win_chance_home, win_chance_away, wins_remaining-1, losses_remaining, home_schedule)
     series_chance_if_lose = series_win_chance_home_away(
-        win_chance_home, win_chance_away, wins_remaining, losses_remaining-1)
+        win_chance_home, win_chance_away, wins_remaining, losses_remaining-1, home_schedule)
     return win_chance * series_chance_if_win + (1-win_chance) * series_chance_if_lose
 
 
